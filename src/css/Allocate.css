@@ -1,0 +1,16 @@
+body {
+    background-color: #F4F6F8;
+    font-family: 'Montserrat';
+    text-align: center;
+    margin: 10px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Form & Input Elements */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
