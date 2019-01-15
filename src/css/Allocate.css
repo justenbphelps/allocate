@@ -1,16 +1,44 @@
-body {
+body, html {
+    height: 100%;
+    width: 100%;
     background-color: #F4F6F8;
-    font-family: 'Montserrat';
+    color: #333;
     text-align: center;
-    margin: 10px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Load system fonts */
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe
+        UI, Helvetica Neue, sans-serif;
+
+    /* Make type rendering look crisper */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Disable auto-enlargement of small text in Safari */
+    text-size-adjust: 100%;
+
+    /* Enable kerning and optional ligatures */
+    text-rendering: optimizeLegibility;
 }
 
-/* Form & Input Elements */
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #E4401D;
+}
+
+
+.row {
+    margin: 0;
 }

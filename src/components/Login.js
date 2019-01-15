@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const LoginWrapper = styled.div`
     margin: 200px auto;
@@ -22,7 +23,7 @@ const LoginForm = styled.div`
 `
 
 const SubmitButton = styled.button`
-    background-color: #333;
+    background-color: #E5401E;
     color: white;
     width: 50%;
     font-weight: 600;
@@ -30,7 +31,7 @@ const SubmitButton = styled.button`
 
     :hover {
         box-shadow: 0px 4px 10px rgb(0,0,0,0.2);
-        background-color: #E5401E;
+        background-color: #DE3618;
         color: white;
     }
 `
@@ -47,7 +48,9 @@ export default class Login extends Component {
                 <div class="form-group">
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></input>
                 </div>   
-                <SubmitButton className="btn btn-lg">Sign Up</SubmitButton>
+                <Link to='/dashboard'>
+                    <SubmitButton className="btn btn-lg">Login</SubmitButton>
+                </Link>
                 {/* Add Auth script for login / signup buttons
                     // If cookies are recognized, change button to login
                  */}            
