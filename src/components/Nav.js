@@ -13,11 +13,16 @@ const NavBar = styled.div`
 `
 
 const LogoH1 = styled.h1`
+  color: #E4401D;
   font-size: 14px;
-  text-align: left;
+  float: left;
   text-transform: uppercase;
   opacity: 0.8;
   letter-spacing: 0.1rem;
+
+  :hover {
+    color: #252525;
+  }
 `
 
 const NavLinks = styled.ul`
@@ -48,7 +53,7 @@ export default class Nav extends Component {
                 <Link to="/dashboard">Dashboard</Link>
             </li>
             <li>
-            <Link to="/join">Join</Link>
+            <Link to="/login">Login</Link>
             </li>            
         </NavLinks>
         </NavBar>

@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 // Routing Components
 import App from './components/App'
 import Dashboard from './components/Dashboard'
-import Join from './components/Join';
+import Login from './components/Login';
 
 
 const Routing = (
@@ -15,7 +15,7 @@ const Routing = (
         <div>
             <Route exact path='/' component={ App } />
             <Route exact path='/dashboard' component={ Dashboard } />
-            <Route exact path='/join' component={ Join } />
+            <Route exact path='/login' component={ Login } />
          </div>
     </Router>    
 )
